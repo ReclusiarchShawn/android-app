@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Marycookbook2">
+<LinearLayout
+    android:id="@+id/toplayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+    <EditText
+        android:id="@+id/fwrite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food name:"
+        android:paddingRight="200dp"
+        android:paddingVertical="20dp"
+       />
+    <ImageButton
+        android:id="@+id/addimgbtn"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="-300dp"
+        android:src="@drawable/baseline_fastfood_24"
+        android:contentDescription="Add img"
+        android:clickable="true"
+        android:focusable="true"
+       />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add image"
+        android:textSize="20dp"
+        android:layout_marginTop="60dp"/>
+    <Button
+        android:id="@+id/sunmitbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="-40dp"
+       />
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/toplayout"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <Button
+            android:id="@+id/recipebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="submit"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="120dp"/>
+        <EditText
+            android:id="@+id/ingredientname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Recipe:"
+            android:hint="write recipes here "
+            android:inputType="textMultiLine"
+            android:paddingRight="230dp"
+            android:layout_marginLeft="-90dp"
+            />
+        <EditText
+            android:id="@+id/writeingredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingredients"
+            android:hint="write ingredients here"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="-390dp"
+            android:padding="15dp"
+            android:inputType="textMultiLine"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
