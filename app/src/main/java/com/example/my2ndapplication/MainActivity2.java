@@ -150,5 +150,15 @@ records.setAdapter(show);
 public void clearbtn(View view){
         String clear="";
         t1.setText(clear);
+}
+public void history(View view){
+
+        try{
+           numbers.deleteall();
+           show.clear();
+           show.notifyDataSetChanged();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
 }}
 

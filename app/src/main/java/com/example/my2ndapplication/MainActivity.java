@@ -31,10 +31,20 @@ public class MainActivity extends AppCompatActivity {
         btn.putExtra("name",a);
         startActivity(btn);
     }
-    public void cookbook(View view){
-        Intent a=new Intent(MainActivity.this, Marycookbook.class);
+
+    public void songsearch(View view){
+        Intent a=new Intent(MainActivity.this, LyricsAPI.class);
         String b=((Button)view).getText().toString();
-        a.putExtra("name",b);
+        a.putExtra("name3",b);
+        startActivity(a);
+    }
+    public void cookbook(View view){
+        Intent a=new Intent(MainActivity.this, MaryCookBook.class);
+        startActivity(a);
+    }
+
+    public void notebook(View view) {
+        Intent a=new Intent(this,Marynotes.class);
         startActivity(a);
     }
 }

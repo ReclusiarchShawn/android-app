@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,17 +15,26 @@
         android:theme="@style/Theme.My2ndApplication"
         tools:targetApi="31">
         <activity
-            android:name=".Marycookbook3"
+            android:name=".Marynotes2"
             android:exported="false" />
         <activity
-            android:name=".Marycookbook2"
-            android:exported="false"
-            android:label="Add Your Recipe"
-            android:parentActivityName=".Marycookbook" />
+            android:name=".Marynotes"
+            android:exported="false" />
         <activity
-            android:name=".Marycookbook"
-            android:exported="false"
-            android:label="Welcome" />
+            android:name=".MaryShop"
+            android:exported="false" />
+        <activity
+            android:name=".RecipeDetails"
+            android:exported="false" />
+        <activity
+            android:name=".AddRecipe"
+            android:exported="false" />
+        <activity
+            android:name=".MaryCookBook"
+            android:exported="true" />
+        <activity
+            android:name=".LyricsAPI"
+            android:exported="false" />
         <activity
             android:name=".MainActivity2"
             android:exported="false"

@@ -36,7 +36,6 @@ public class dbmsdata extends SQLiteOpenHelper {
     public boolean add(putdata nos){
         SQLiteDatabase db=this.getWritableDatabase();
         ContentValues cv=new ContentValues();
-
         cv.put(NUMS,nos.getNo());
         long insert = db.insert(RECORD, null,cv);
         db.close();
@@ -59,5 +58,11 @@ public class dbmsdata extends SQLiteOpenHelper {
         cursor.close();
         db.close();
         return returnlist;
-    }}
+    }
+public void deleteall(){
+        SQLiteDatabase db=this.getWritableDatabase();
+        db.delete(RECORD,null , null);
+        db.close();
+}
+}
 

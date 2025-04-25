@@ -113,14 +113,23 @@
         android:backgroundTint="@color/blue"
         app:layout_constraintTop_toBottomOf="@id/result"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"></Button>
+        app:layout_constraintRight_toRightOf="parent"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="clear history"
+        android:onClick="history"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/record"/>
+
     <ListView
         android:id="@+id/record"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/clearbtn"></ListView>
+        app:layout_constraintTop_toBottomOf="@id/clearbtn"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
